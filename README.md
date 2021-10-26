@@ -1,5 +1,6 @@
-# phy-277
-PHY 277 (Fall 2019) coding assignment submissions
+# PHY 277 (Fall 2019), Stony Brook University
+Programming course for Physics major. Emphasis on Numerical Analysis in FORTRAN and C++. 
+All code edited in GNU Emacs and compiled using GCC compilers in Linux Ubuntu terminal environment.
 
 # Assignment 1
 Write your own version of the “Hello World!” program in Fortran 
