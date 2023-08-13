@@ -80,16 +80,9 @@ where q is the charge density. This can be discretized and solved via relaxation
 Assume that the charge density in cell (25,25) is -4 in CGS units and that the charge density in cell (75,75) is equal to -4 in CGS units. Write a Fortran program that uses rank 2 arrays to solve this equation iteratively and which writes out the electrical potential data in Gnuplot form. You may look at the Poisson program in the notes as a guide to help you but write your own code, don't just copy mine! What is the electrical potential of the cell (25,50)? (Indicate your answer in the header comment-block of the code).
 
 # Assignment 9
-Convert your Simpson's Rule code (from Assignment 6) to use double precision for all real variables
-and constants. You should also modify your code to use a subroutine to supply the limits of integration
-and a user defined function subprogram to evaluate the integrand as a function of x at each point
-within the subinterval as needed to evaluate Simpson's Rule (note: you should invoke the function
-subprogram three times with three different arguments. The code should compute the x abcissas
-directly (see examples in the Lecture 22 notes) as opposed to incrementing the location of the abcissas.
+Convert your Simpson's Rule code (from Assignment 6) to use double precision for all real variables and constants. You should also modify your code to use a subroutine to supply the limits of integration and a user defined function subprogram to evaluate the integrand as a function of x at each point within the subinterval as needed to evaluate Simpson's Rule (note: you should invoke the function subprogram three times with three different arguments. The code should compute the x abcissas directly (see examples in the Lecture 22 notes) as opposed to incrementing the location of the abcissas.
 
-Do not create three different function subprograms!) For simplicity package all of your code in one
-file. Finally repeat the convergence study you did and note, in comments in the header block, how the
-converged value you find for the integral compares to the value you found using single precision reals
+Do not create three different function subprograms!) For simplicity package all of your code in one file. Finally repeat the convergence study you did and note, in comments in the header block, how the converged value you find for the integral compares to the value you found using single precision reals
 in Assignment 6.
 
 # Assignment 10
@@ -97,19 +90,18 @@ Write (in C++) a program that solves that uses the quadratic formula to find the
 
 $ax^2 + bx + c = 0$
 
-where a, b, and c are real numbers. Your code should hand the case where a=0 as well as the case where
-the roots are complex (by writing out the real and imaginary parts separately). Your code should also prompt the user to enter values for a, b, and c.
+where a, b, and c are real numbers. Your code should hand the case where a=0 as well as the case where the roots are complex (by writing out the real and imaginary parts separately). Your code should also prompt the user to enter values for a, b, and c.
 
 # Assignment 11
 Write (in C++) a program that solves that uses Newton-Raphson iteration to find the roots of the function
 
 $f(x) = x + 3\sin(2x)$
 
-Your code should prompt the user to enter an initial guess for the root. In the header block note how many
-roots you found, what the approximate values of the roots are, and what initial guesses you used to find each root.
+Your code should prompt the user to enter an initial guess for the root. In the header block note how many roots you found, what the approximate values of the roots are, and what initial guesses you used to find each root.
 
 # Assignment 12
 Write (in C++) a program that implements the 4th order Runge-Kutta algorithm to solve the following problem:
+
 Assume the trajectory of a cannonball, including the effects of atmospheric drag, is given by the equations
 
 $\frac{dx}{dt} = v_x$
@@ -120,19 +112,15 @@ $\frac{dv_x}{dt} = -\alpha v v_x$
 
 $\frac{dv_y}{dt} = -\alpha v v_y - g$
 
-where $g = 9.81 m/s$, $\alpha = 5 \times 10^{-5} m^{-1}$, and $v = \sqrt{v_x^2 + v_y^2}$. Suppose we launch a cannonball at an
-angle of $30^\circ$ above the horizon with a speed of $v = 800 m/s$. How far does the cannonball travel
-horizontally and what timestep size ($\Delta t$) did you have to use to find your answer? <em>You should put your answers in comment statements in your header block along with the results of a convergence test. <strong>See page 2 for an important suggestions on how to proceed in developing this code. Submit only a single source code file containing all code.</strong></em>
+where $g = 9.81 m/s$, $\alpha = 5 \times 10^{-5} m^{-1}$, and $v = \sqrt{v_x^2 + v_y^2}$. Suppose we launch a cannonball at an angle of $30^\circ$ above the horizon with a speed of $v = 800 m/s$. How far does the cannonball travel horizontally and what timestep size ($\Delta t$) did you have to use to find your answer? <em>You should put your answers in comment statements in your header block along with the results of a convergence test. <strong>See page 2 for an important suggestions on how to proceed in developing this code. Submit only a single source code file containing all code.</strong></em>
 
-Note: The program should use C++ functions for the problem specific parts (initial conditions, number of
-equations, the right-hand-sides of the ODEs) and dynamic arrays so that the main driver program is generic (no problem specific information in the main program!). <strong><em>Failure to use C++ functions to implement the problem specific parts of the code will mean an automatic score of zero for your grade on this problem.</em></strong>
+Note: The program should use C++ functions for the problem specific parts (initial conditions, number of equations, the right-hand-sides of the ODEs) and dynamic arrays so that the main driver program is generic (no problem specific information in the main program!). <strong><em>Failure to use C++ functions to implement the problem specific parts of the code will mean an automatic score of zero for your grade on this problem.</em></strong>
 
 # Assignment 13
 Develop an encapsulated C++ class for 3-d vectors (look at the Fortran example of a vector class in the notes for lecture 32) that implements methods for the following operations: vector output (a print function), vector addition, vector subtraction, a vector norm, vector dot product, and a vector cross product. All member variables should be defined as private. The class should also have a class constructor that allows the initialization of the three components of each vector as well as a default constructor. The class should be packaged in a namespace. Also provide a driver program that demonstrates how each of the methods works by exercising them on instances of this class. <strong>All the code for this assignment should be packaged into a single file.</strong>
 
 # Assignment 14
-Using the code you produced for Assignment 8 make a 2-D Gnuplot heat map image (output in encapsulated Postscript form) that depicts your converged solution to the 2-D conducting box electrical potential problem. Using LaTeX produce a short document that describes the partial differential equation that was solved, the finite-difference form of the equation, an enumerated step-by-step description of the iterative algorithm that was used to solve the equation, and the final result that you obtained. Your code will be graded on how well you typeset your equations and how clearly you
-describe the algorithm and your results! 
+Using the code you produced for Assignment 8 make a 2-D Gnuplot heat map image (output in encapsulated Postscript form) that depicts your converged solution to the 2-D conducting box electrical potential problem. Using LaTeX produce a short document that describes the partial differential equation that was solved, the finite-difference form of the equation, an enumerated step-by-step description of the iterative algorithm that was used to solve the equation, and the final result that you obtained. Your code will be graded on how well you typeset your equations and how clearly you describe the algorithm and your results! 
 
 For simplicity, name the heatmap image file (which your are to include into the LaTeX document using the `epsfig` package) \<yourlastnamehere\>\_heatmap.eps
 
