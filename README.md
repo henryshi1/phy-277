@@ -23,16 +23,11 @@ function. You may assume that the variables of x and y have units of radians. Yo
 intrinsic functions to evaluate the mathematical expressions (where possible).
 
 # Assignment 4
-Assume that a ship with position given by real Cartesian coordinates (x1,y1) using it's radar system
-sees an unknown target with real Cartesian coordinates (x2,y2). Write a Fortran program that prompts
-the user for the coordinates of the ship and target (in units of kilometers) and which calculates the range
-(distance), in kilometers, between the ship and the target and the bearing (the direction relative to true
-north), in degrees, of the target . The program should also tell the user what quadrant the target is in, i.e.
-northwest, northeast, southwest, or southeast, as well as if the target is exactly due north, south, east, or
-west of the ship. Finally, warn the user if the target and ship coordinates coincide.
-USE NESTED IF CONSTRUCTS IN THIS PROGRAM. DO NOT USE ELSEIFS.
+Assume that a ship with position given by real Cartesian coordinates (x1,y1) using it's radar system sees an unknown target with real Cartesian coordinates (x2,y2). Write a Fortran program that prompts the user for the coordinates of the ship and target (in units of kilometers) and which calculates the range (distance), in kilometers, between the ship and the target and the bearing (the direction relative to true north), in degrees, of the target . The program should also tell the user what quadrant the target is in, i.e. northwest, northeast, southwest, or southeast, as well as if the target is exactly due north, south, east, or west of the ship. Finally, warn the user if the target and ship coordinates coincide. 
 
-Hint: You can assume that the y-axis is the north-south axis. Make use of the atan function and
+**USE NESTED IF CONSTRUCTS IN THIS PROGRAM. DO NOT USE ELSEIFS.**
+
+Hint: You can assume that the y-axis is the north-south axis. Make use of the `atan` function and
 classify all of the possible cases. It's OK to test for equality of floating point variables in this case to
 determine if the bearing is due north, south, east or west. Don't forget to convert radians to degrees!
 There is a helpful diagram on the next page. Make sure to put your user ID number in the filename
