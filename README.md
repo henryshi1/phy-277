@@ -77,10 +77,10 @@ $$\frac{\partial^2 U}{\partial x^2} + \frac{\partial^2 U}{\partial y^2} = 4\pi q
 
 where q is the charge density. This can be discretized and solved via relaxation by the iterative equation
 
-$$U^{new}_{i,j} = \frac{1}{4}$$
+$$U^{new}_{i,j} = \frac{-4\pi h^2 q_{i,j}}{4}$$
 
 
-$$U^{new}_{i,j} = \frac{ U^{old}_{i+1,j} + U^{old}_{i-1,j} + U^{old}_{i,j+1} + U^{old}_{i,j-1} - 4\pi h^2 q_{i,j} }{4}$$
+$$U^{new}_{i,j} = \frac{ U^{old}_{i+1,j} + U^{old}_{i-1,j} + U^{old}_{i,j+1} + U^{old}_{i,j-1} -4\pi h^2 q_{i,j} }{4}$$
 
 Assume that the charge density in cell (25,25) is -4 in CGS units and that the charge density in cell (75,75) is equal to -4 in CGS units. Write a Fortran program that uses rank 2 arrays to solve this equation iteratively and which writes out the electrical potential data in Gnuplot form. You may look at the Poisson program in the notes as a guide to help you but write your own code, don't just copy mine! What is the electrical potential of the cell (25,50)? (Indicate your answer in the header comment-block of the code).
 
