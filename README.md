@@ -117,15 +117,16 @@ roots you found, what the approximate values of the roots are, and what initial 
 Write (in C++) a program that implements the 4th order Runge-Kutta algorithm to solve the following problem:
 Assume the trajectory of a cannonball, including the effects of atmospheric drag, is given by the equations
 
-$
-\begin{equation}
-\frac{dx}{dt} = v_x \\
-\frac{dy}{dt} = v_y
-\end{equation}
-$
+$ \frac{dx}{dt} = v_x $
 
-where , , and . Suppose we launch a cannonball at an
-angle of above the horizon with a speed of . How far does the cannonball travel
+$ \frac{dy}{dt} = v_y $
+
+$ \frac{dv_x}{dt} = -\alpha v v_x $
+
+$ \frac{dv_y}{dt} = -\alpha v v_y - g $
+
+where $g = 9.81 m/s$, $\alpha = 5 \times 10^{-5} m^{-1}$, and $v = \sqrt{v_x^2 + v_y^2}$. Suppose we launch a cannonball at an
+angle of $30^\circ$ above the horizon with a speed of $v = 800 m/s$. How far does the cannonball travel
 horizontally and what timestep size ( ) did you have to use to find your answer? You should put your answers
 in comment statements in your header block along with the results of a convergence test. See page 2 for an
 important suggestions on how to proceed in developing this code. Submit only a single source code file
