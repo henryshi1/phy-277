@@ -1,23 +1,15 @@
 # PHY 277 (Fall 2019), Stony Brook University
 Programming course for Physics major. Emphasis on Numerical Analysis in FORTRAN and C++. 
 All code edited in GNU Emacs and compiled using GCC compilers in Linux Ubuntu terminal environment.
-Full assignment descriptions are given in the folder labeled assignment_desc.
+Full assignment descriptions are given in the folder **assignment_desc**.
 
-Assignments 1-9 are in FORTRAN. Assignments 10-14 are in C++.
+Assignments 1-9 are in FORTRAN. Assignments 10-14 are in C++. Source code is in the folder **assignment_src** and has the filename `shi_112166935_hw(number).(ext)`.
 
 # Assignment 1
-Write your own version of the “Hello World!” program in Fortran 
-(you may use the example in the lecture notes as a guide). 
-Your code may output a message other than “Hello World!” 
-provided that it is not an offensive messsage.
+Write your own version of the “Hello World!” program in Fortran (you may use the example in the lecture notes as a guide). Your code may output a message other than “Hello World!” provided that it is not an offensive messsage.
 
 # Assignment 2
-Write a Fortran program that
-calculates the energy of a particle in MKS units. The program should prompt the user prompts the user to enter
-the particle mass and speed in and output the particle kinetic energy to the terminal screen. In the header block
-include a statement (in the comments) indicating what kinetic energy you found for a particle mass of 1 kilogram
-and a speed of 10,000,000 meters per second. Also state if you are certain that your program is giving a correct
-result for the particle kinetic energy.
+Write a Fortran program that calculates the energy of a particle in MKS units. The program should prompt the user prompts the user to enter the particle mass and speed in and output the particle kinetic energy to the terminal screen. In the header block include a statement (in the comments) indicating what kinetic energy you found for a particle mass of 1 kilogram and a speed of 10,000,000 meters per second. Also state if you are certain that your program is giving a correct result for the particle kinetic energy.
 
 # Assignment 3
 Write a program that uses a single block if construct to evaluate the following function:
@@ -127,12 +119,20 @@ $\frac{dv_y}{dt} = -\alpha v v_y - g$
 
 where $g = 9.81 m/s$, $\alpha = 5 \times 10^{-5} m^{-1}$, and $v = \sqrt{v_x^2 + v_y^2}$. Suppose we launch a cannonball at an
 angle of $30^\circ$ above the horizon with a speed of $v = 800 m/s$. How far does the cannonball travel
-horizontally and what timestep size ( ) did you have to use to find your answer? You should put your answers
-in comment statements in your header block along with the results of a convergence test. See page 2 for an
-important suggestions on how to proceed in developing this code. Submit only a single source code file
-containing all code.
+horizontally and what timestep size ($\Delta t$) did you have to use to find your answer? <em>You should put your answers in comment statements in your header block along with the results of a convergence test. <strong>See page 2 for an important suggestions on how to proceed in developing this code. Submit only a single source code file containing all code.</strong></em>
 
 Note: The program should use C++ functions for the problem specific parts (initial conditions, number of
-equations, the right-hand-sides of the ODEs) and dynamic arrays so that the main driver program is generic (no
-problem specific information in the main program!). Failure to use C++ functions to implement the problem
-specific parts of the code will mean an automatic score of zero for your grade on this problem
+equations, the right-hand-sides of the ODEs) and dynamic arrays so that the main driver program is generic (no problem specific information in the main program!). <strong><em>Failure to use C++ functions to implement the problem specific parts of the code will mean an automatic score of zero for your grade on this problem.</em></strong>
+
+# Assignment 13
+Develop an encapsulated C++ class for 3-d vectors (look at the Fortran example of a vector class in the notes for lecture 32) that implements methods for the following operations: vector output (a print function), vector addition, vector subtraction, a vector norm, vector dot product, and a vector cross product. All member variables should be defined as private. The class should also have a class constructor that allows the initialization of the three components of each vector as well as a default constructor. The class should be packaged in a namespace. Also provide a driver program that demonstrates how each of the methods works by exercising them on instances of this class. <strong>All the code for this assignment should be packaged into a single file.</strong>
+
+# Assignment 14
+Using the code you produced for Assignment 8 make a 2-D Gnuplot heat map image (output in encapsulated Postscript form) that depicts your converged solution to the 2-D conducting box electrical potential problem. Using LaTeX produce a short document that describes the partial differential equation that was solved, the finite-difference form of the equation, an enumerated step-by-step description of the iterative algorithm that was used to solve the equation, and the final result that you obtained. Your code will be graded on how well you typeset your equations and how clearly you
+describe the algorithm and your results! 
+
+For simplicity, name the heatmap image file (which your are to include into the LaTeX document using the `epsfig` package) \<yourlastnamehere\>\_heatmap.eps
+
+<strong>You should submit both the LaTeX file and the EPS file (just upload one at a time). Your LaTeX file must be processed by LaTeX on the Mathlab machines without errors or you will receive a zero on this assignment!</strong>
+
+Output file of box coordinates and potential values for each 
