@@ -64,7 +64,7 @@ $$\mu = \frac{1}{N} \sum^N_{i=1} x_i$$
 
 $$\sigma = \sqrt{\frac{1}{N-1} \sum^N_{i=1} (x_i - \mu)^2}$$
 
-where $x_i$ is the $i$th data point and $N$ is the total number of data points.
+where $x_i$ is the i-th data point and $N$ is the total number of data points.
 
 Hints: You may find the `trim()` intrinsic function useful to get rid of trailing blank spaces stored in a character variable that you use to hold the file name. 
 
