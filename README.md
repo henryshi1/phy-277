@@ -3,7 +3,7 @@ Programming course for Physics major. Emphasis on Numerical Analysis in FORTRAN 
 All code edited in GNU Emacs and compiled using GCC compilers in Linux Ubuntu terminal environment.
 Full assignment descriptions are given in the folder **assignment_desc**.
 
-Assignments 1-9 are in FORTRAN. Assignments 10-14 are in C++. Source code is in the folder **assignment_src** and has the filename `shi_112166935_hw(number).(ext)`.
+Assignments 1-9 are in FORTRAN. Assignments 10-14 are in C++. Source code is in the folder **assignment_src** and has the filename `shi_112166935_hw(number).(ext)` unless otherwise indicated.
 
 # Assignment 1
 Write your own version of the “Hello World!” program in Fortran (you may use the example in the lecture notes as a guide). Your code may output a message other than “Hello World!” provided that it is not an offensive messsage.
@@ -53,13 +53,9 @@ block. Clearly indicate in the header block comments what you think is the most 
 integral and why you think it is the most accurate value. 
 
 # Assignment 7
-Write a Fortran program that reads in and arbitrary number of real values (one per line of the file) from a file and
-stores those values in a rank-1 array. The program should prompt the user to enter the file name. In
-addition, the program should compute the mean and standard deviation of the values and output those results to
-STDOUT.
+Write a Fortran program that reads in and arbitrary number of real values (one per line of the file) from a file (given by `hw07input.dat`) and stores those values in a rank-1 array. The program should prompt the user to enter the file name. In addition, the program should compute the mean and standard deviation of the values and output those results to STDOUT.
 
-Hints: You may find the `trim()` intrinsic function useful to get rid of trailing blank spaces stored in a character
-variable that you use to hold the file name. 
+Hints: You may find the `trim()` intrinsic function useful to get rid of trailing blank spaces stored in a character variable that you use to hold the file name. 
 
 # Assignment 8
 Suppose there are two square charges located inside a 2-D 10cm x 10cm grounded conducting box that has
