@@ -40,9 +40,9 @@ $$\sum^N_{i=0} \left(C_i \frac{x^{2i}}{(2i)!} \right)$$
 
 where
 
-$$C_i = -1$$ if $i$ is odd
+* $C_i = -1$ if $i$ is odd
 
-$$C_i = 1$$ if $i$ is even
+* $C_i = 1$ if $i$ is even
 
 Your code should prompt the user to enter a real value for x > 0 and an integer value for n. It should
 also output the value of the sum to STDOUT. For full credit your code should use only a single loop.
