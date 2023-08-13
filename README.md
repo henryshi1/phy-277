@@ -53,7 +53,7 @@ or conditional constructs of any kind.
 # Assignment 6
 Use an `do while` loop in Fortran program to implement Simpson’s rule to evaluate the integral.
 
-$$\int^{20}_1 \left( (x + \cos(x)) e^{\cos(x)} + ae^{-\frac{(x-b)^2}{c}} \right)$$
+$$\int^{20}_1 \left( \[x + \cos(x)) e^{\cos(x)} + ae^{-\frac{(x-b)^2}{c}} \right\] dx$$
 
 Where $a=4000$, $b=15.15$, and $c=0.01$. Indicate in the comment block (at the beginning of your code) what value you obtained for the integral as a function of the number of subintervals used, i.e. put a table of the value of the integral versus the number of subintervals in the comments of the header block. Clearly indicate in the header block comments what you think is the most accurate value for the integral and why you think it is the most accurate value. 
 
