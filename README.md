@@ -16,7 +16,7 @@ where $$\gamma = \left(1 - \frac{v^2}{c^2} \right)^{-1/2}$$
 and $m$ is the particle mass, $v$ is the particle speed, and $c$ is the speed of light. Write a Fortran program that calculates the energy of a particle in MKS units. The program should prompt the user prompts the user to enter the particle mass and speed in and output the particle kinetic energy to the terminal screen. In the header block include a statement (in the comments) indicating what kinetic energy you found for a particle mass of 1 kilogram and a speed of 10,000,000 meters per second. Also state if you are certain that your program is giving a correct result for the particle kinetic energy.
 
 # Assignment 3
-Write a program that uses a single block if construct to evaluate the following function. (See `assignment03.pdf` in the **assignment_desc** folder.)
+Write a program that uses a single block `if` construct to evaluate the following function. (See `assignment03.pdf` in the **assignment_desc** folder.)
 
 Your program should prompt the user to enter values for x and y and should output the value of the
 function. You may assume that the variables of x and y have units of radians. Your code should use
