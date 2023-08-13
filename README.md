@@ -45,19 +45,17 @@ where
 * $C_i = 1$ if $i$ is even
 
 Your code should prompt the user to enter a real value for x > 0 and an integer value for n. It should
-also output the value of the sum to STDOUT. For full credit your code should use only a single loop.
+also output the value of the sum to STDOUT. **For full credit your code should use only a single loop.**
 
-Challenge: It is possible to complete this assignment without using any `if` constructs, if statements,
+Challenge: It is possible to complete this assignment without using any `if` constructs, `if` statements,
 or conditional constructs of any kind.
 
 # Assignment 6
 Use an `do while` loop in Fortran program to implement Simpson’s rule to evaluate the integral.
 
-Where $a=4000$, $b=15.15$, and $c=0.01$. Indicate in the comment block (at the beginning of your
-code) what value you obtained for the integral as a function of the number of subintervals used, i.e. put
-a table of the value of the integral versus the number of subintervals in the comments of the header
-block. Clearly indicate in the header block comments what you think is the most accurate value for the
-integral and why you think it is the most accurate value. 
+$$\int^{20}_1 \left( (x + \cos(x)) e^{\cos(x)} + ae^{-\frac{(x-b)^2}{c}} \right)$$
+
+Where $a=4000$, $b=15.15$, and $c=0.01$. Indicate in the comment block (at the beginning of your code) what value you obtained for the integral as a function of the number of subintervals used, i.e. put a table of the value of the integral versus the number of subintervals in the comments of the header block. Clearly indicate in the header block comments what you think is the most accurate value for the integral and why you think it is the most accurate value. 
 
 # Assignment 7
 Write a Fortran program that reads in and arbitrary number of real values (one per line of the file) from a file and stores those values in a rank-1 array. The program should prompt the user to enter the file name. In addition, the program should compute the mean and standard deviation of the values and output those results to STDOUT.
