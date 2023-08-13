@@ -77,7 +77,7 @@ $$\frac{\partial^2 U}{\partial x^2} + \frac{\partial^2 U}{\partial y^2} = 4\pi q
 
 where q is the charge density. This can be discretized and solved via relaxation by the iterative equation 
 
-$$U^{new}_{i,j} = \frac{-4\pi h^2 q_i_,_j}{4}$$
+$$U^{new}_{i,j} = \frac{U^{old}_{i+1},_j - 4\pi h^2 q_i,_j}{4}$$
 
 $$U^{new}_{i,j} = \frac{ U^{old}_{i+1,j} + U^{old}_{i-1,j} + U^{old}_{i,j+1} + U^{old}_{i,j-1} -4\pi h^2 q_{i,j} }{4}$$
 
