@@ -3,6 +3,8 @@ Programming course for Physics major. Emphasis on Numerical Analysis in FORTRAN 
 All code edited in GNU Emacs and compiled using GCC compilers in Linux Ubuntu terminal environment.
 Full assignment descriptions are given in the folder labeled assignment_desc.
 
+Assignments 1-9 are in FORTRAN. Assignments 10-14 are in C++.
+
 # Assignment 1
 Write your own version of the “Hello World!” program in Fortran 
 (you may use the example in the lecture notes as a guide). 
@@ -102,3 +104,33 @@ $ax^2 + bx + c = 0$
 
 where a, b, and c are real numbers. Your code should hand the case where a=0 as well as the case where
 the roots are complex (by writing out the real and imaginary parts separately). Your code should also prompt the user to enter values for a, b, and c.
+
+# Assignment 11
+Write (in C++) a program that solves that uses Newton-Raphson iteration to find the roots of the function
+
+$f(x) = x + 3\sin(2x)$
+
+Your code should prompt the user to enter an initial guess for the root. In the header block note how many
+roots you found, what the approximate values of the roots are, and what initial guesses you used to find each root.
+
+# Assignment 12
+Write (in C++) a program that implements the 4th order Runge-Kutta algorithm to solve the following problem:
+Assume the trajectory of a cannonball, including the effects of atmospheric drag, is given by the equations
+
+$
+\begin{equation}
+\frac{dx}{dt} = v_x \\
+\frac{dy}{dt} = v_y
+\end{equation}
+$
+
+where , , and . Suppose we launch a cannonball at an
+angle of above the horizon with a speed of . How far does the cannonball travel
+horizontally and what timestep size ( ) did you have to use to find your answer? You should put your answers
+in comment statements in your header block along with the results of a convergence test. See page 2 for an
+important suggestions on how to proceed in developing this code. Submit only a single source code file
+containing all code.
+Note: The program should use C++ functions for the problem specific parts (initial conditions, number of
+equations, the right-hand-sides of the ODEs) and dynamic arrays so that the main driver program is generic (no
+problem specific information in the main program!). Failure to use C++ functions to implement the problem
+specific parts of the code will mean an automatic score of zero for your grade on this problem
