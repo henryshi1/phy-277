@@ -58,7 +58,13 @@ $$\int^{20}_1 \left\[ \left( x + \cos(x) \right) e^{\cos(x)} + ae^{-\frac{(x-b)^
 Where $a=4000$, $b=15.15$, and $c=0.01$. Indicate in the comment block (at the beginning of your code) what value you obtained for the integral as a function of the number of subintervals used, i.e. put a table of the value of the integral versus the number of subintervals in the comments of the header block. Clearly indicate in the header block comments what you think is the most accurate value for the integral and why you think it is the most accurate value. 
 
 # Assignment 7
-Write a Fortran program that reads in and arbitrary number of real values (one per line of the file) from a file and stores those values in a rank-1 array. The program should prompt the user to enter the file name. In addition, the program should compute the mean and standard deviation of the values and output those results to STDOUT.
+Write a Fortran program that reads in and arbitrary number of real values (one per line of the file) from a file and stores those values in a rank-1 array. The program should prompt the user to enter the file name. In addition, the program should compute the mean and standard deviation of the values and output those results to STDOUT. The mean and the corrected sample standard deviation are given by
+
+$$\mu = \frac{1}{N} \sum^N_{i=1} x_i$$
+
+$$\sigma = \sqrt{\frac{1}{N-1} \sum^N_{i=1} (x_i - \mu)^2 }
+
+where $x_i$ is the $i$th data point and $N$ is the total number of data points.
 
 Hints: You may find the `trim()` intrinsic function useful to get rid of trailing blank spaces stored in a character variable that you use to hold the file name. 
 
