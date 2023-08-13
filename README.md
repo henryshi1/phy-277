@@ -135,4 +135,4 @@ For simplicity, name the heatmap image file (which your are to include into the 
 
 <strong>You should submit both the LaTeX file and the EPS file (just upload one at a time). Your LaTeX file must be processed by LaTeX on the Mathlab machines without errors or you will receive a zero on this assignment!</strong>
 
-Output file of box coordinates and potential values for each 
+Output file `hw08.dat` gives box coordinates and potential values for each coordinate. Image `hw08.png` created by Gnuplot.
